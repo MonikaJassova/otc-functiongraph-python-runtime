@@ -1,6 +1,6 @@
 import json
 
-from fn_runtime_context import Context, Logger
+from fn_runtime_context import Context
 
 class SampleEvent:
     def __init__(self, event):
@@ -10,7 +10,7 @@ class SampleEvent:
         return self._event.get("key", "")
 
 
-def handler(event: SampleEvent, context: Context):
+def handler(event, context: Context):
     logger = context.getLogger()
     
     logger.info("Function name: %s", context.getFunctionName())
