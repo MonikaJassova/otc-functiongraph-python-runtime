@@ -49,7 +49,7 @@ Configure function:
 
 - `Environment variables`
 
-   - **ECS_ENDPOINT** = **https://ecs.eu-de.otc.t-systems.com**
+   - **OBS_ENDPOINT** = **https://obs.eu-de.otc.t-systems.com**
   
 
 
