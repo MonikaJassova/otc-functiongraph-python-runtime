@@ -135,8 +135,6 @@ For example:
 After you define the event parameter, FunctionGraph code completion
 will help you access the content of the event parameter.
 
-As alternative, you can also use predefined javascript objects to define the expected shape of the input event.
-
 For trigger events, the event parameter is predefined by FunctionGraph.
 
 You can refer to the following documentation for details about the predefined event parameters for different trigger events.
