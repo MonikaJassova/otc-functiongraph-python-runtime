@@ -131,7 +131,7 @@ You should see the response from the server indicating that the event was proces
 
 .. code-block:: json
 
-   {"message":"Event processed successfully","inputEvent":{"key":"value"}}
+   {"body":"/invoke success","headers":{"Content-Type":"application/json"},"isBase64Encoded":false,"statusCode":200}
 
 
 Step 2: Build the Container Image

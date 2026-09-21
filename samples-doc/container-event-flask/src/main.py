@@ -18,7 +18,7 @@ def init_post():
     data = {
         "statusCode": 200,
         "isBase64Encoded": False,
-        "body": json.dumps(request.path + " success"),
+        "body": request.path + " success",
         "headers": {
             "Content-Type": "application/json"
         }
@@ -55,7 +55,7 @@ def invoke_post():
     data = {
         "statusCode": 200,
         "isBase64Encoded": False,
-        "body": json.dumps(request.path + " success"),
+        "body": request.path + " success",
         "headers": {
             "Content-Type": "application/json"
         }
