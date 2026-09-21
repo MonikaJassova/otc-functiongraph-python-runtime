@@ -51,10 +51,14 @@ def invoke_post():
     else:
         g.logger.error("***NO AGENCY SPECIFIED OR KEYS NOT INCLUDED ***")
 
+    # The event is delivered as the JSON request body.
+    input_event = request.get_json(silent=True) or {}
+
     # Build response data.
     data = {
         "statusCode": 200,
         "isBase64Encoded": False,
+        "inputEvent": input_event,
         "body": request.path + " success",
         "headers": {
             "Content-Type": "application/json"
